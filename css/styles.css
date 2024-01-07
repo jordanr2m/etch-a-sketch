@@ -18,6 +18,17 @@ body {
     font-family: Tahoma, sans-serif;
 }
 
+button {
+    color: white;
+    background: hotpink;
+    padding: 0.5rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:1.5rem;
+    margin-top: 5px;
+  }
+
 canvas {
     border: 30px solid #e80000;
     border-radius: 10px;
@@ -29,8 +40,9 @@ canvas {
 
 canvas.shake {
     animation: shake 0.5s linear 1;
+    /* Run shake over half a second, make it linear, & run only once */
 }
-
+/* Taking it at different values of the animation & moving it left & right a couple pixels */
 @keyframes shake {
 
     10%,
@@ -54,14 +66,3 @@ canvas.shake {
         transform: translate3d(4px, 0, 0);
     }
 }
-
-button {
-    color: white;
-    background: hotpink;
-    padding: 0.5rem;
-    border: 2px solid transparent;
-    text-decoration: none;
-    font-weight: 600;
-    font-size:1.5rem;
-    margin-top: 5px;
-  }
